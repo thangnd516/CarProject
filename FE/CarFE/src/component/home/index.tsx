@@ -1,15 +1,12 @@
 
-
-import React from 'react'
+import Advertisement from '../Advertisement'
 
 const HomePage = () => {
 
 
   return (
     <div>
-            <div>
-                Day la homepage
-            </div>
+        <Advertisement/>
     </div>
   )
 }

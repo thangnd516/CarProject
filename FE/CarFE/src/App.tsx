@@ -12,10 +12,11 @@ function App() {
     <>
       <div className="wraper-header">
           <Header />
+          <Login/>
       </div>
       <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/" element={<HomePage />} /> */}
 
         </Routes>
     </>

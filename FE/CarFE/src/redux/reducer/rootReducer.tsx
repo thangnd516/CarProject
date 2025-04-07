@@ -1,14 +1,13 @@
-import { combineReducers } from "redux";
-import counterReducer from "./counterReducer";
-import userReducer from "./userReducer";
-
-
-
+import { combineReducers, createStore } from 'redux';
+import userReducer from './userReducer';
+import counterReducer from './counterReducer'; 
 
 const rootReducer = combineReducers({
-    counter: counterReducer,
-    user: userReducer
-})
+  user: userReducer,
+  counter: counterReducer,
+});
+
+const store = createStore(rootReducer);
 
 export type RootState = ReturnType<typeof rootReducer>;
-export default rootReducer;
+export { store }; 
