@@ -5,6 +5,7 @@ import Advertisement from './component/Advertisement'
 import Login from './component/Auth/Login'
 import Header from './component/header/Header'
 import HomePage from './component/home'
+import { ListProduct } from './component/product/ListProduct'
 
 function App() {
 
@@ -12,13 +13,14 @@ function App() {
     <>
       <div className="wraper-header">
           <Header />
-          <Login/>
+          {/* <Login/> */}
       </div>
       <Routes>
+        <Route path="/product" element={<ListProduct />} />
+      </Routes>
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/" element={<HomePage />} /> */}
 
-        </Routes>
     </>
   )
 }

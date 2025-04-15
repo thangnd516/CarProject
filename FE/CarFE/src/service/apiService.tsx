@@ -17,3 +17,27 @@ export const postLogin = async (email: string, password: string) => {
     }
   }
 };
+
+
+interface Product {
+  id: number;
+  nameProduct: string;
+  price: number;
+  images?: string;
+  color?: string;
+  typeProduct?: string;
+}
+
+// apiService.ts
+export const getAll = async (
+  page: number,
+  sortBy: string,
+  price: string,
+  color: string,
+  typeProduct: string,
+  nameProduct: string
+): Promise<{ content: Product[] }> => {
+  // Thay thế đường dẫn URL cho phù hợp
+  const res = await fetch(`/api/products?page=${page}&sortBy=${sortBy}&price=${price}&color=${color}&typeProduct=${typeProduct}&nameProduct=${nameProduct}`);
+  return res.json();
+};

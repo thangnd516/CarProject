@@ -3,8 +3,7 @@ import { BrowserRouter } from 'react-router-dom';  // Dùng BrowserRouter thay v
 import './index.css';
 import App from './App.tsx';
 import { Provider } from 'react-redux';
-import store from "./redux/store.tsx";
-
+import store from "./redux/store.ts";
 import "nprogress/nprogress.css";
 
 createRoot(document.getElementById('root')!).render(

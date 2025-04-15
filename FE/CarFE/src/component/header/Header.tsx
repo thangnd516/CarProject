@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div className="header-wrap">
       <div className="left-content">
-        <div className="product-header">Sản Phẩm</div>
+        <div className="product-header"><Link to={"/product"}>Sản Phẩm</Link></div>
         <div className="buy-product--header">Mua xe</div>
         <div className="service-support">Dịch vụ & Hỗ trợ</div>
       </div>
